@@ -33,20 +33,5 @@ namespace Calculator.Add.Test
             // Assert
             Assert.Equal(expected, result);
         }
-
-        [Fact]
-        public void Add_SameNumber_ReturnsDouble()
-        {
-            // Arrange
-            var a = 5;
-            var b = 3;
-            var expected = a + b;
-
-            // Act
-            var result = _uut.Add(a, 4);
-
-            // Assert
-            Assert.Equal(expected, result);
-        }
     }
 }
