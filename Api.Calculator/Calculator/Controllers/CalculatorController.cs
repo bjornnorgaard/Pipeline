@@ -13,6 +13,12 @@ namespace Calculator.Controllers
             _addService = addService;
         }
 
+        [HttpGet]
+        public string Default()
+        {
+            return "Controller is still working!";
+        }
+
         [HttpGet("Add/{a}/{b}")]
         public int Add(int a, int b)
         {
