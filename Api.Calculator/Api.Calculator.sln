@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Add.Service", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Add.Test", "Calculator.Add.Test\Calculator.Add.Test.csproj", "{CFF0C7E0-66FE-4B92-8543-E4E711C8E70E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Multiply.Service", "Calculator.Multiply.Service\Calculator.Multiply.Service.csproj", "{EF263F9F-0664-42FE-BCA5-7E284D7DDCC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Multiply.Service", "Calculator.Multiply.Service\Calculator.Multiply.Service.csproj", "{EF263F9F-0664-42FE-BCA5-7E284D7DDCC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Multiply.Interface", "Calculator.Multiply.Interface\Calculator.Multiply.Interface.csproj", "{5EB83C3C-3C4E-4C9E-909D-34A261A9A417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Multiply.Interface", "Calculator.Multiply.Interface\Calculator.Multiply.Interface.csproj", "{5EB83C3C-3C4E-4C9E-909D-34A261A9A417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Multiply.Test", "Calculator.Multiply.Test\Calculator.Multiply.Test.csproj", "{E583187D-8780-4EBE-843D-1CA5E28EE272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Multiply.Test", "Calculator.Multiply.Test\Calculator.Multiply.Test.csproj", "{E583187D-8780-4EBE-843D-1CA5E28EE272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Integration", "Calculator.Integration\Calculator.Integration.csproj", "{963E6F5F-770B-43DB-9AF2-6CBA4F97AFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E583187D-8780-4EBE-843D-1CA5E28EE272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E583187D-8780-4EBE-843D-1CA5E28EE272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E583187D-8780-4EBE-843D-1CA5E28EE272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963E6F5F-770B-43DB-9AF2-6CBA4F97AFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963E6F5F-770B-43DB-9AF2-6CBA4F97AFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963E6F5F-770B-43DB-9AF2-6CBA4F97AFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963E6F5F-770B-43DB-9AF2-6CBA4F97AFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

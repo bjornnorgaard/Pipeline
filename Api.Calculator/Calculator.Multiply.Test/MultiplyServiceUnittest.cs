@@ -7,7 +7,7 @@ namespace Calculator.Multiply.Test
 {
     public class MultiplyServiceUnittest
     {
-        private MultiplyService _uut;
+        private readonly MultiplyService _uut;
 
         public MultiplyServiceUnittest()
         {
