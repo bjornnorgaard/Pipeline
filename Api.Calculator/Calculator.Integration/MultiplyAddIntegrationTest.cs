@@ -19,7 +19,6 @@ namespace Calculator.Integration
         [InlineData(2, 0)]
         [InlineData(2, 1)]
         [InlineData(2, 2)]
-        [InlineData(-2, 2)]
         public async Task Multiply(int a, int b)
         {
             var client = new HttpClient { BaseAddress = new Uri(CalculatorApiRoot) };
