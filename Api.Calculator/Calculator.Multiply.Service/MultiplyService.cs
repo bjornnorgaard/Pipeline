@@ -1,5 +1,4 @@
-﻿using System;
-using Calculator.Add.Interface;
+﻿using Calculator.Add.Interface;
 using Calculator.Multiply.Interface;
 
 namespace Calculator.Multiply.Service
@@ -19,7 +18,7 @@ namespace Calculator.Multiply.Service
 
             for (var i = 0; i < a; i++)
             {
-                result += _addService.Add(result, b);
+                result += _addService.Add(0, b);
             }
 
             return result;

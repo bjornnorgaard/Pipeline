@@ -13,8 +13,8 @@ namespace Calculator.Multiply.Test
         {
             var addService = Substitute.For<IAddService>();
 
-            const int max = 1;
-            const int min = -1;
+            const int max = 2;
+            const int min = -2;
             for (var i = min; i <= max; i++)
             {
                 for (var j = min; j <= max; j++)
@@ -27,15 +27,13 @@ namespace Calculator.Multiply.Test
         }
 
         [Theory]
-        [InlineData(0, -1)]
         [InlineData(0, 0)]
         [InlineData(0, 1)]
-        [InlineData(1, -1)]
         [InlineData(1, 0)]
         [InlineData(1, 1)]
-        [InlineData(-1, -1)]
-        [InlineData(-1, 0)]
-        [InlineData(-1, 1)]
+        [InlineData(2, 0)]
+        [InlineData(2, 1)]
+        [InlineData(2, 2)]
         public void Multiply(int a, int b)
         {
             // Arrange
