@@ -21,18 +21,20 @@ namespace Calculator.Integration
         [InlineData(2, 2)]
         public async Task Multiply(int a, int b)
         {
+            // Arrange
+            var expected = a * b;
             var client = new HttpClient { BaseAddress = new Uri(CalculatorApiRoot) };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
+            // Act
             Console.WriteLine($"Sending multiply request: {nameof(a)}:{a} and {nameof(b)}:{b}");
-
             var request = await client.GetAsync($"multiply/{a}/{b}");
             request.EnsureSuccessStatusCode();
             var content = await request.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<int>(content);
-            var expected = a * b;
 
+            // Assert
             Assert.Equal(expected, result);
         }
     }
