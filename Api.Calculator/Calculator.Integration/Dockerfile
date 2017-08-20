@@ -8,4 +8,6 @@ RUN dotnet restore
 # Copy source
 COPY . .
 
+ENV TEAMCITY_PROJECT_NAME=fake
+
 ENTRYPOINT ["dotnet", "test"]
