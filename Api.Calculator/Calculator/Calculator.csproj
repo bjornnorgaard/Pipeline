@@ -19,6 +19,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Calculator.Add.Interface\Calculator.Add.Interface.csproj" />
     <ProjectReference Include="..\Calculator.Add.Service\Calculator.Add.Service.csproj" />
+    <ProjectReference Include="..\Calculator.Multiply.Interface\Calculator.Multiply.Interface.csproj" />
+    <ProjectReference Include="..\Calculator.Multiply.Service\Calculator.Multiply.Service.csproj" />
   </ItemGroup>
 
 </Project>
