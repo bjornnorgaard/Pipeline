@@ -9,7 +9,7 @@ namespace Calculator.Integration
 {
     public class MultiplyAddIntegrationTest
     {
-        public const string CalculatorApiRoot = "http://localhost:8080/api/calculator/";
+        public const string CalculatorApiRoot = "http://calculator/api/calculator/";
 
         [Theory]
         [InlineData(0, 0)]
@@ -25,7 +25,7 @@ namespace Calculator.Integration
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            Console.WriteLine($"Sending multiply request: {nameof(a)}:{a} and {nameof(b)}{b}");
+            Console.WriteLine($"Sending multiply request: {nameof(a)}:{a} and {nameof(b)}:{b}");
 
             var request = await client.GetAsync($"multiply/{a}/{b}");
             request.EnsureSuccessStatusCode();
