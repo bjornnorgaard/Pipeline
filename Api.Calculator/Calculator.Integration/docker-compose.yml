@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  calculator:
+    image: ursu/pipeline:ci-44
+    #ports:
+    # - "8080:80"
+  integration:
+    image: testing:int-10
+    build: .
