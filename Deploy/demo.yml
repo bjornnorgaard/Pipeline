@@ -4,4 +4,4 @@ services:
   calculator:
     image: ursu/pipeline:ci-${CALCULATOR_BUILD_NUMBER}
     ports:
-     - "${PORT_CALCULATOR-8080}:80"
+     - "${PORT_CALCULATOR-80}:80"

@@ -1,7 +1,0 @@
-version: '3'
-
-services:
-  calculator:
-    image: ursu/pipeline:ci-${CALCULATOR_BUILD_NUMBER}
-    ports:
-     - "${PORT_CALCULATOR-80}:80"
