@@ -45,11 +45,5 @@ namespace Calculator.Multiply.Test
             // Assert
             Assert.Equal(expected, result);
         }
-        
-        [Fact]
-        public void Bad_Test_Fails()
-        {
-            Assert.Equal(1, 2);
-        }
     }
 }
