@@ -6,7 +6,7 @@ services:
     #ports:
     # - "8080:80"
   integration:
-    image: testing:int-${BUILD_NUMBER-10}
+    image: integrationtest:int-${BUILD_NUMBER-10}
     build: .
     environment:
       - TEAMCITY_PROJECT_NAME
