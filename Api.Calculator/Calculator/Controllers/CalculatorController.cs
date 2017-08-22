@@ -19,7 +19,7 @@ namespace Calculator.Controllers
         [HttpGet]
         public string Default()
         {
-            return "Controller is working!";
+            return "Controller is still working!";
         }
 
         [HttpGet("Add/{a}/{b}")]
